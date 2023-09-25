@@ -1,0 +1,34 @@
+{
+  "name": "@itell/core",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "typings": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.es.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "clsx": "^1.2.1",
+    "tailwind-merge": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "vite": "^4.3.2",
+    "vite-plugin-dts": "^2.3.0"
+  }
+}

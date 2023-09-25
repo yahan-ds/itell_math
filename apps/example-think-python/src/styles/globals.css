@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("@itell/ui/dist/style.css");
+
+
+pre {
+  font-family: var(--font-mono);
+}
+
+
+.inset-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.note .unhighlighted {
+  @apply text-black font-normal !important;
+}
+
+mark.highlight {
+  cursor: pointer !important;
+}
+
+svg {
+  transition: all 0.3s;
+}
+
+/* @media (max-width: 768px) {
+  .module-sidebar {
+    display: none;
+  }
+
+  .toc-sidebar {
+    display: none;
+  }
+
+  #section-content {
+    grid-column: span 12;
+  }
+} */
