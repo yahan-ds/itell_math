@@ -16,7 +16,6 @@
     "build:docs": "turbo run build --filter @itell/docs",
     "build:tailwind": "turbo run build --filter @itell/tailwind",
     "dev": "turbo run dev",
-    "dev:math": "turbo run dev --filter @itell/example-math",
     "dev:poe": "turbo run dev --filter @itell/example-poe",
     "dev:tp": "turbo run dev --filter @itell/example-think-python",
     "dev:docs": "turbo run dev --filter @itell/docs",
