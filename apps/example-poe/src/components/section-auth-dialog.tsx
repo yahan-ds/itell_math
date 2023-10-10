@@ -26,24 +26,25 @@ export default function SectionAuthModal({ type = "unauthorized" }: Props) {
 	if (session?.user) return null;
 
 	return (
-		<Dialog defaultOpen={true}>
-			<DialogContent>
-				<DialogHeader>
-					<DialogTitle>Login in view the textbook</DialogTitle>
-					<DialogDescription>
-						<Collapsible>
-							<CollapsibleTrigger className="m-0 p-0">
-								Why do I need to have an account?
-							</CollapsibleTrigger>
-							<CollapsibleContent>
-								We collects anonymous data to improve learning experience. See{" "}
-								<span className="underline">here</span> for more details.
-							</CollapsibleContent>
-						</Collapsible>
-					</DialogDescription>
-				</DialogHeader>
-				<div className="mt-5">{AuthButtons.google}</div>
-			</DialogContent>
-		</Dialog>
+        null
+		// <Dialog defaultOpen={true}>
+		// 	<DialogContent>
+		// 		<DialogHeader>
+		// 			<DialogTitle>Login in view the textbook</DialogTitle>
+		// 			<DialogDescription>
+		// 				<Collapsible>
+		// 					<CollapsibleTrigger className="m-0 p-0">
+		// 						Why do I need to have an account?
+		// 					</CollapsibleTrigger>
+		// 					<CollapsibleContent>
+		// 						We collects anonymous data to improve learning experience. See{" "}
+		// 						<span className="underline">here</span> for more details.
+		// 					</CollapsibleContent>
+		// 				</Collapsible>
+		// 			</DialogDescription>
+		// 		</DialogHeader>
+		// 		<div className="mt-5">{AuthButtons.google}</div>
+		// 	</DialogContent>
+		// </Dialog>
 	);
 }
